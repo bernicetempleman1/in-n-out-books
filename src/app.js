@@ -335,9 +335,7 @@ app.get("/", async (req, res, next) => {
 
       <div class="navbar">
         <a href="https://templeman-in-n-out-books.onrender.com">>Home</a>
-        <a href="https://templeman-in-n-out-books.onrender.com/api/login">>Login</a>
-        <a href="https://templeman-in-n-out-books.onrender.com/api/users/harry@hogwarts.edu/verify-security-question">Verify Harry</a>
-
+  
         <a href="https://templeman-in-n-out-books.onrender.com/api/books">Books</a>
 
         <div class="subnav">
