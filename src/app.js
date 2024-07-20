@@ -335,7 +335,7 @@ app.get("/", async (req, res, next) => {
 
       <div class="navbar">
         <a href="https://templeman-in-n-out-books.onrender.com">>Home</a>
-  
+
         <a href="https://templeman-in-n-out-books.onrender.com/api/books">Books</a>
 
         <div class="subnav">
@@ -343,7 +343,7 @@ app.get("/", async (req, res, next) => {
             Book by id <i class="fa fa-caret-down"></i>
           </button>
           <div class="subnav-content">
-            <a href="https://templeman-in-n-out-books.onrender.com/api/books/1">Book 1</a>
+            <a href="/api/books/1">Book 1</a>
             <a href="https://templeman-in-n-out-books.onrender.com/api/books/2">Book 2</a>
             <a href="https://templeman-in-n-out-books.onrender.com/api/books/3">Book 3</a>
             <a href="https://templeman-in-n-out-books.onrender.com/api/books/4">Book 4</a>
