@@ -334,20 +334,22 @@ app.get("/", async (req, res, next) => {
       <!-- Use the nav area to add hyperlinks to other pages within the website-->
 
       <div class="navbar">
-        <a href="http://localhost:3000">>Home</a>
+        <a href="https://templeman-in-n-out-books.onrender.com">>Home</a>
+        <a href="https://templeman-in-n-out-books.onrender.com/api/login">>Login</a>
+        <a href="https://templeman-in-n-out-books.onrender.com/api/users/:email/verify-security-question">Verify</a>
 
-        <a href="http://localhost:3000/api/books">Books</a>
+        <a href="https://templeman-in-n-out-books.onrender.com/api/books">Books</a>
 
         <div class="subnav">
           <button class="subnavbtn">
             Book by id <i class="fa fa-caret-down"></i>
           </button>
           <div class="subnav-content">
-            <a href="http://localhost:3000/api/books/1">Book 1</a>
-            <a href="http://localhost:3000/api/books/2">Book 2</a>
-            <a href="http://localhost:3000/api/books/3">Book 3</a>
-            <a href="http://localhost:3000/api/books/4">Book 4</a>
-            <a href="http://localhost:3000/api/books/5">Book 5</a>
+            <a href="https://templeman-in-n-out-books.onrender.com/api/books/1">Book 1</a>
+            <a href="https://templeman-in-n-out-books.onrender.com/api/books/2">Book 2</a>
+            <a href="https://templeman-in-n-out-books.onrender.com/api/books/3">Book 3</a>
+            <a href="https://templeman-in-n-out-books.onrender.com/api/books/4">Book 4</a>
+            <a href="https://templeman-in-n-out-books.onrender.com/api/books/5">Book 5</a>
           </div>
         </div>
       </div>
