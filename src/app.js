@@ -318,6 +318,10 @@ app.get("/", async (req, res, next) => {
       .subnav:hover .subnav-content {
         display: block;
       }
+      .container {
+        display: grid;
+        place-items: center;
+      }
     </style>
   </head>
   <body>
@@ -335,7 +339,8 @@ app.get("/", async (req, res, next) => {
 
       <div class="navbar">
         <a href="">>Home</a>
-        <a href="/api/books">All Books</a>
+        <a href="/api/books">Books</a>
+
         <div class="subnav">
           <button class="subnavbtn">
             Book by id <i class="fa fa-caret-down"></i>
@@ -375,6 +380,33 @@ app.get("/", async (req, res, next) => {
           <!-- Paragraph element: Use the paragraph below to describe the latest book-->
           <p>Title: "The Return of the King" by author: J.R.R. Tolkien</p>
         </div>
+
+        <div class="container">
+          <h2>Login</h2>
+          <form action="/api/login" method="post" target="_blank">
+            <label for="email">e-mail  :</label>
+              <input type="text" id="email" name="email"><br><br>
+            <label for="password">password:</label>
+              <input type="text" id="password" name="password"><br><br>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+        <br>
+        <br>
+
+        <div class="container">
+          <h2>Verify Harry's Security Question</h2>
+          <form action="/api/users/harry@hogwarts.edu/verify-security-question" method="post" target="_blank">
+            <label for="answer">What is your pet's name? </label>
+              <input type="text" id="answer" name="securityQuestions[1][answer]"><br><br>
+            <label for "answer">What is your favorite book?", </label>
+              <input type="text" id="answer" name="securityQuestions[2][answer]"><br><br>
+            <label for="answer">What is your mother's maiden name</label>
+              <input type="text" id="answer" name=securityQuestions[3][answer]"><br><br>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+
       </main>
 
       <!-- Use the footer area to add webpage footer content-->
@@ -604,12 +636,10 @@ app.post(
       }
 
       // security questions match
-      res
-        .status(200)
-        .send({
-          message: "Security questions successfully answered",
-          user: user,
-        });
+      res.status(200).send({
+        message: "Security questions successfully answered",
+        user: user,
+      });
     } catch (err) {
       console.error("Error: ", err.message);
       next(err);

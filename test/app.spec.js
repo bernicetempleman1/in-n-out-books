@@ -52,7 +52,7 @@ describe("Chapter 3: API Tests", () => {
 describe("Chapter 4: API Tests", () => {
   //checks if the /api/books POST endpoint returns a 201 status code for successful creations.
   it("Should return a 201-status code when adding a new book.", async () => {
-    // sends a POST request to /api/recipes endpoint and waits for a response
+    // sends a POST request to /api/books endpoint and waits for a response
     const res = await request(app).post("/api/books").send({
       id: 99,
       title: "Pragmatic APIs with NodeJS and Express",
