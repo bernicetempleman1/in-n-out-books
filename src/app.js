@@ -374,46 +374,13 @@ app.get("/", async (req, res, next) => {
         </div>
 
         <div id="latest">
-          <!-- Heading for the latest rescue -->
+          <!-- Heading for the latest book-->
           <h2>Our Latest Book: Return of the King</h2>
 
           <!-- Paragraph element: Use the paragraph below to describe the latest book-->
           <p>Title: "The Return of the King" by author: J.R.R. Tolkien</p>
         </div>
         <br />
-        <br />
-
-        <div class="container">
-          <h2>Add a Book</h2>
-          <form action="/api/books" method="post" target="_blank">
-            <label for="id">id:</label>
-            <input type="text" id="id" name="id" /><br /><br />
-            <label for="title">title:</label>
-            <input type="text" id="title" name="title" /><br /><br />
-            <label for="author">author:</label>
-            <input type="text" id="author" name="author" /><br /><br />
-            <input type="submit" value="Submit" />
-          </form>
-        </div>
-        <br />
-        <br />
-
-        <div class="container">
-          <h2>Login</h2>
-          <form action="/api/login" method="post" target="_blank">
-            <label for="email">e-mail :</label>
-            <input type="text" id="email" name="email" /><br /><br />
-            <label for="password">password:</label>
-            <input type="text" id="password" name="password" /><br /><br />
-            <input type="submit" value="Submit" />
-          </form>
-        </div>
-        <br />
-        <br />
-
-        <br />
-        <br />
-
       </main>
 
       <!-- Use the footer area to add webpage footer content-->
